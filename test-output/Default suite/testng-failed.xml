@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.test.regression.TestMain">
+        <methods>
+          <include name="logOut"/>
+          <include name="testmethod"/>
+          <include name="closeApplication"/>
+          <include name="getResults"/>
+          <include name="extentReports"/>
+          <include name="setUpApplication"/>
+          <include name="login"/>
+          <include name="endExtendedReport"/>
+        </methods>
+      </class> <!-- com.test.regression.TestMain -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

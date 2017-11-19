@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SmokeTestSuite]">
+  <test name="CreatePackage(failed)">
+    <parameter name="package" value="Testpackage"/>
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.test.regression.VerifySIMPackege">
+        <methods>
+          <include name="logOut"/>
+          <include name="simPackageHome"/>
+          <include name="loadPropertiesFile"/>
+          <include name="closeApplication"/>
+          <include name="createPackage" invocation-numbers="0"/>
+          <include name="getResults"/>
+          <include name="setUpApplication"/>
+          <include name="extentReports"/>
+          <include name="login"/>
+          <include name="endExtendedReport"/>
+        </methods>
+      </class> <!-- com.test.regression.VerifySIMPackege -->
+    </classes>
+  </test> <!-- CreatePackage(failed) -->
+</suite> <!-- Failed suite [SmokeTestSuite] -->

@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="SmokeTestSuite">
+	<test name="CreatePackage">
+	<parameter name="browser" value ="Chrome"/>
+	<parameter name="package" value ="Testpackage"/>
+		<classes>
+			<class name="com.test.regression.VerifySIMPackege"/>
+			<class name="com.test.regression.VerifyTPCreation"/>
+		</classes>
+	</test>
+	
+	
+</suite> 
