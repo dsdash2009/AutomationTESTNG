@@ -8,9 +8,9 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import com.framework.execution.Parameterization;
 import com.framework.execution.readPropertiesFile;
-import com.framework.testbase.TestBsae;
+import com.framework.testbase.TestBase;
 
-public class VerifyHomePage extends TestBsae{
+public class VerifyHomePage extends TestBase{
 	static String configfile = System.getProperty("user.dir")+"/src/main/resources/app_config_Files/"+ "Config.properties";
 	public static String url=readPropertiesFile.read_File(configfile).getProperty("dsp_url");
 

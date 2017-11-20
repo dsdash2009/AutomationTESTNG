@@ -7,7 +7,6 @@
     <classes>
       <class name="com.test.regression.VerifySIMPackege">
         <methods>
-          <include name="logOut"/>
           <include name="simPackageHome"/>
           <include name="loadPropertiesFile"/>
           <include name="closeApplication"/>
@@ -15,7 +14,6 @@
           <include name="getResults"/>
           <include name="setUpApplication"/>
           <include name="extentReports"/>
-          <include name="login"/>
           <include name="endExtendedReport"/>
         </methods>
       </class> <!-- com.test.regression.VerifySIMPackege -->

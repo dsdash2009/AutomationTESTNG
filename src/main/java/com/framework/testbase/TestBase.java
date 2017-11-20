@@ -8,21 +8,14 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
-
-import javax.naming.ldap.Rdn;
-
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
-import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import com.framework.platforms.DriverSingletoneObject;
@@ -32,7 +25,6 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import com.framework.execution.readPropertiesFile;
 import com.framework.helper.excelHelper.excelHelper;
-import static com.framework.execution.Keywords.*;
 
 /**
  * @author dashd
@@ -40,7 +32,7 @@ import static com.framework.execution.Keywords.*;
  *This is the Base class containing common functionalities used by all pages
  */
 
-public class TestBsae {
+public class TestBase {
 	
 	public static WebDriver driver;
 	
@@ -50,7 +42,7 @@ public class TestBsae {
 	
 	public static ExtentReports extent;  //We can set path where our report needs to be generated
 	public static ExtentTest elog; // where logs needs to be generated
-	final static Logger log = Logger.getLogger(TestBsae.class);
+	final static Logger log = Logger.getLogger(TestBase.class);
 	public static Properties rdConfig;
 	public static Properties rdProf;
 	
@@ -96,7 +88,7 @@ public class TestBsae {
 		}
 		
 	}
-	@BeforeClass(description="Log in to portal")
+	/*@BeforeClass(description="Log in to portal")
 	public void login() throws InterruptedException{
 		try{
 						
@@ -123,7 +115,7 @@ public class TestBsae {
 			log.error("oops!!! something went wrong",e);
 		}
 		
-	}
+	}*/
 	
 	@AfterTest
 	public void closeApplication(){
@@ -215,37 +207,9 @@ public class TestBsae {
 	}
 		
 	public static void main(String[] args) throws InterruptedException {
-		TestBsae obj=new TestBsae();
+		TestBase obj=new TestBase();
 		obj.setUpApplication("Chrome");
 	}
 	
-	/*public WebElement getLocator(String locator) throws Exception {
-	//System.out.println(locator);
-    String[] split = locator.split(":");
-	String locatorType = split[0];
-	String locatorValue = split[1];
-	//System.out.println("locatorType:-"+locatorType);
-	//System.out.println("locatorValue:-"+locatorValue);
-	if (locatorType.toLowerCase().equals("id"))
-		return driver.findElement(By.id(locatorValue));
-	else if (locatorType.toLowerCase().equals("name"))
-		return driver.findElement(By.name(locatorValue));
-	else if ((locatorType.toLowerCase().equals("classname"))|| (locatorType.toLowerCase().equals("class")))
-		return driver.findElement(By.className(locatorValue));
-	else if ((locatorType.toLowerCase().equals("tagname"))
-			|| (locatorType.toLowerCase().equals("tag")))
-		return driver.findElement(By.className(locatorValue));
-	else if ((locatorType.toLowerCase().equals("linktext"))
-			|| (locatorType.toLowerCase().equals("link")))
-		return driver.findElement(By.linkText(locatorValue));
-	else if (locatorType.toLowerCase().equals("partiallinktext"))
-		return driver.findElement(By.partialLinkText(locatorValue));
-	else if ((locatorType.toLowerCase().equals("cssselector"))
-			|| (locatorType.toLowerCase().equals("css")))
-		return driver.findElement(By.cssSelector(locatorValue));
-	else if (locatorType.toLowerCase().equals("xpath"))
-		return driver.findElement(By.xpath(locatorValue));
-	else
-		throw new Exception("Unknown locator type '" + locatorType + "'");
-}*/
+	
 }

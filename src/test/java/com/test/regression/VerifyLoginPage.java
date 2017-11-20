@@ -9,13 +9,13 @@ import org.openqa.selenium.By;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
-import com.framework.testbase.TestBsae;
+import com.framework.testbase.TestBase;
 /**
  * @author dashd
  *
  */
 @Test
-public class VerifyLoginPage extends TestBsae {
+public class VerifyLoginPage extends TestBase {
 
 	@Test(description="Log in to portal")
 	public void login() throws InterruptedException{

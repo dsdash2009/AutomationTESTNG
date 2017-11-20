@@ -1,42 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="5" total="8" passed="2">
+<testng-results skipped="0" failed="1" ignored="15" total="20" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="SmokeTestSuite" duration-ms="30939" started-at="2017-11-19T04:07:35Z" finished-at="2017-11-19T04:08:06Z">
+  <suite name="SmokeTestSuite" duration-ms="41120" started-at="2017-11-20T12:49:28Z" finished-at="2017-11-20T12:50:10Z">
     <groups>
     </groups>
-    <test name="CreatePackage" duration-ms="30939" started-at="2017-11-19T04:07:35Z" finished-at="2017-11-19T04:08:06Z">
+    <test name="CreatePackage" duration-ms="41120" started-at="2017-11-20T12:49:28Z" finished-at="2017-11-20T12:50:10Z">
       <class name="com.test.regression.VerifyTPCreation">
-        <test-method status="PASS" signature="login()[pri:0, instance:com.test.regression.VerifyTPCreation@5ae63ade]" name="login" is-config="true" duration-ms="1650" started-at="2017-11-19T09:37:59Z" description="Log in to portal" finished-at="2017-11-19T09:38:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="verifyTechProfCreation()[pri:0, instance:com.test.regression.VerifyTPCreation@5ae63ade]" name="verifyTechProfCreation" duration-ms="50" started-at="2017-11-19T09:38:01Z" finished-at="2017-11-19T09:38:01Z">
+        <test-method status="PASS" signature="verifyTechProfCreation()[pri:0, instance:com.test.regression.VerifyTPCreation@610694f1]" name="verifyTechProfCreation" duration-ms="16" started-at="2017-11-20T18:20:04Z" finished-at="2017-11-20T18:20:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTechProfCreation -->
-        <test-method status="PASS" signature="getResults(org.testng.ITestResult)[pri:0, instance:com.test.regression.VerifyTPCreation@5ae63ade]" name="getResults" is-config="true" duration-ms="164" started-at="2017-11-19T09:38:01Z" finished-at="2017-11-19T09:38:01Z">
+        <test-method status="PASS" signature="getResults(org.testng.ITestResult)[pri:0, instance:com.test.regression.VerifyTPCreation@610694f1]" name="getResults" is-config="true" duration-ms="209" started-at="2017-11-20T18:20:04Z" finished-at="2017-11-20T18:20:04Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyTechProfCreation status=SUCCESS method=VerifyTPCreation.verifyTechProfCreation()[pri:0, instance:com.test.regression.VerifyTPCreation@5ae63ade] output={null}]]]>
+                <![CDATA[[TestResult name=verifyTechProfCreation status=SUCCESS method=VerifyTPCreation.verifyTechProfCreation()[pri:0, instance:com.test.regression.VerifyTPCreation@610694f1] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResults -->
-        <test-method status="PASS" signature="logOut()[pri:0, instance:com.test.regression.VerifyTPCreation@5ae63ade]" name="logOut" is-config="true" duration-ms="1273" started-at="2017-11-19T09:38:01Z" description="Log out from portal" finished-at="2017-11-19T09:38:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOut -->
       </class> <!-- com.test.regression.VerifyTPCreation -->
-      <class name="com.test.regression.VerifySIMPackege">
-        <test-method status="PASS" signature="extentReports()[pri:0, instance:com.test.regression.VerifySIMPackege@23e028a9]" name="extentReports" is-config="true" duration-ms="221" started-at="2017-11-19T09:37:35Z" finished-at="2017-11-19T09:37:35Z">
+      <class name="com.framework.pageObject.Login">
+        <test-method status="PASS" signature="extentReports()[pri:0, instance:com.framework.pageObject.Login@23e028a9]" name="extentReports" is-config="true" duration-ms="255" started-at="2017-11-20T18:19:29Z" finished-at="2017-11-20T18:19:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- extentReports -->
-        <test-method status="PASS" signature="setUpApplication(java.lang.String)[pri:0, instance:com.test.regression.VerifySIMPackege@23e028a9]" name="setUpApplication" is-config="true" duration-ms="7976" started-at="2017-11-19T09:37:35Z" depends-on-methods="com.framework.testbase.TestBsae.loadPropertiesFile" finished-at="2017-11-19T09:37:43Z">
+        <test-method status="PASS" signature="setUpApplication(java.lang.String)[pri:0, instance:com.framework.pageObject.Login@23e028a9]" name="setUpApplication" is-config="true" duration-ms="11586" started-at="2017-11-20T18:19:29Z" depends-on-methods="com.framework.testbase.TestBsae.loadPropertiesFile" finished-at="2017-11-20T18:19:40Z">
           <params>
             <param index="0">
               <value>
@@ -47,30 +39,68 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpApplication -->
-        <test-method status="PASS" signature="loadPropertiesFile()[pri:0, instance:com.test.regression.VerifySIMPackege@23e028a9]" name="loadPropertiesFile" is-config="true" duration-ms="0" started-at="2017-11-19T09:37:35Z" finished-at="2017-11-19T09:37:35Z">
+        <test-method status="PASS" signature="loadPropertiesFile()[pri:0, instance:com.framework.pageObject.Login@23e028a9]" name="loadPropertiesFile" is-config="true" duration-ms="0" started-at="2017-11-20T18:19:29Z" finished-at="2017-11-20T18:19:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadPropertiesFile -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.test.regression.VerifySIMPackege@23e028a9]" name="login" is-config="true" duration-ms="6768" started-at="2017-11-19T09:37:43Z" description="Log in to portal" finished-at="2017-11-19T09:37:50Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.framework.pageObject.Login@23e028a9]" name="login" duration-ms="8839" started-at="2017-11-20T18:19:40Z" description="Log in to portal" finished-at="2017-11-20T18:19:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="simPackageHome()[pri:0, instance:com.test.regression.VerifySIMPackege@23e028a9]" name="simPackageHome" duration-ms="1669" started-at="2017-11-19T09:37:50Z" finished-at="2017-11-19T09:37:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- simPackageHome -->
-        <test-method status="PASS" signature="getResults(org.testng.ITestResult)[pri:0, instance:com.test.regression.VerifySIMPackege@23e028a9]" name="getResults" is-config="true" duration-ms="3254" started-at="2017-11-19T09:37:51Z" finished-at="2017-11-19T09:37:55Z">
+        <test-method status="PASS" signature="getResults(org.testng.ITestResult)[pri:0, instance:com.framework.pageObject.Login@23e028a9]" name="getResults" is-config="true" duration-ms="723" started-at="2017-11-20T18:19:49Z" finished-at="2017-11-20T18:19:50Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=simPackageHome status=SUCCESS method=VerifySIMPackege.simPackageHome()[pri:0, instance:com.test.regression.VerifySIMPackege@23e028a9] output={null}]]]>
+                <![CDATA[[TestResult name=login status=SUCCESS method=Login.login()[pri:0, instance:com.framework.pageObject.Login@23e028a9] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResults -->
-        <test-method status="FAIL" signature="createPackage(java.lang.String)[pri:0, instance:com.test.regression.VerifySIMPackege@23e028a9]" name="createPackage" duration-ms="2288" started-at="2017-11-19T09:37:55Z" depends-on-methods="com.test.regression.VerifySIMPackege.simPackageHome" finished-at="2017-11-19T09:37:57Z">
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.framework.pageObject.Login@23e028a9]" name="closeApplication" is-config="true" duration-ms="3545" started-at="2017-11-20T18:20:05Z" finished-at="2017-11-20T18:20:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method status="PASS" signature="endExtendedReport()[pri:0, instance:com.framework.pageObject.Login@23e028a9]" name="endExtendedReport" is-config="true" duration-ms="1374" started-at="2017-11-20T18:20:08Z" finished-at="2017-11-20T18:20:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endExtendedReport -->
+      </class> <!-- com.framework.pageObject.Login -->
+      <class name="com.framework.pageObject.Logout">
+        <test-method status="PASS" signature="logOut()[pri:0, instance:com.framework.pageObject.Logout@43814d18]" name="logOut" duration-ms="359" started-at="2017-11-20T18:20:04Z" description="Logging out from Portal" finished-at="2017-11-20T18:20:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOut -->
+        <test-method status="PASS" signature="getResults(org.testng.ITestResult)[pri:0, instance:com.framework.pageObject.Logout@43814d18]" name="getResults" is-config="true" duration-ms="37" started-at="2017-11-20T18:20:05Z" finished-at="2017-11-20T18:20:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=logOut status=SUCCESS method=Logout.logOut()[pri:0, instance:com.framework.pageObject.Logout@43814d18] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResults -->
+      </class> <!-- com.framework.pageObject.Logout -->
+      <class name="com.test.regression.VerifySIMPackege">
+        <test-method status="PASS" signature="simPackageHome()[pri:0, instance:com.test.regression.VerifySIMPackege@5ae63ade]" name="simPackageHome" duration-ms="981" started-at="2017-11-20T18:19:50Z" finished-at="2017-11-20T18:19:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- simPackageHome -->
+        <test-method status="PASS" signature="getResults(org.testng.ITestResult)[pri:0, instance:com.test.regression.VerifySIMPackege@5ae63ade]" name="getResults" is-config="true" duration-ms="322" started-at="2017-11-20T18:19:51Z" finished-at="2017-11-20T18:19:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=simPackageHome status=SUCCESS method=VerifySIMPackege.simPackageHome()[pri:0, instance:com.test.regression.VerifySIMPackege@5ae63ade] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResults -->
+        <test-method status="FAIL" signature="createPackage(java.lang.String)[pri:0, instance:com.test.regression.VerifySIMPackege@5ae63ade]" name="createPackage" duration-ms="1092" started-at="2017-11-20T18:19:51Z" depends-on-methods="com.test.regression.VerifySIMPackege.simPackageHome" finished-at="2017-11-20T18:19:52Z">
           <params>
             <param index="0">
               <value>
@@ -88,7 +118,7 @@
 	at org.testng.Assert.failNotEquals(Assert.java:512)
 	at org.testng.Assert.assertTrue(Assert.java:41)
 	at org.testng.Assert.assertTrue(Assert.java:51)
-	at com.test.regression.VerifySIMPackege.createPackage(VerifySIMPackege.java:54)
+	at com.test.regression.VerifySIMPackege.createPackage(VerifySIMPackege.java:51)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -120,29 +150,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createPackage -->
-        <test-method status="PASS" signature="getResults(org.testng.ITestResult)[pri:0, instance:com.test.regression.VerifySIMPackege@23e028a9]" name="getResults" is-config="true" duration-ms="1544" started-at="2017-11-19T09:37:57Z" finished-at="2017-11-19T09:37:58Z">
+        <test-method status="PASS" signature="getResults(org.testng.ITestResult)[pri:0, instance:com.test.regression.VerifySIMPackege@5ae63ade]" name="getResults" is-config="true" duration-ms="11662" started-at="2017-11-20T18:19:52Z" finished-at="2017-11-20T18:20:04Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=createPackage status=FAILURE method=VerifySIMPackege.createPackage(java.lang.String)[pri:0, instance:com.test.regression.VerifySIMPackege@23e028a9] output={null}]]]>
+                <![CDATA[[TestResult name=createPackage status=FAILURE method=VerifySIMPackege.createPackage(java.lang.String)[pri:0, instance:com.test.regression.VerifySIMPackege@5ae63ade] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResults -->
-        <test-method status="PASS" signature="logOut()[pri:0, instance:com.test.regression.VerifySIMPackege@23e028a9]" name="logOut" is-config="true" duration-ms="916" started-at="2017-11-19T09:37:58Z" description="Log out from portal" finished-at="2017-11-19T09:37:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logOut -->
-        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.test.regression.VerifySIMPackege@23e028a9]" name="closeApplication" is-config="true" duration-ms="2586" started-at="2017-11-19T09:38:03Z" finished-at="2017-11-19T09:38:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-        <test-method status="PASS" signature="endExtendedReport()[pri:0, instance:com.test.regression.VerifySIMPackege@23e028a9]" name="endExtendedReport" is-config="true" duration-ms="486" started-at="2017-11-19T09:38:05Z" finished-at="2017-11-19T09:38:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endExtendedReport -->
       </class> <!-- com.test.regression.VerifySIMPackege -->
     </test> <!-- CreatePackage -->
   </suite> <!-- SmokeTestSuite -->

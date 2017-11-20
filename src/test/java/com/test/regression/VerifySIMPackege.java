@@ -3,8 +3,6 @@
  */
 package com.test.regression;
 
-import static org.testng.Assert.assertTrue;
-
 import org.apache.log4j.Logger;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
@@ -12,14 +10,13 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.framework.execution.Keywords;
-import com.framework.testbase.TestBsae;
-import com.relevantcodes.extentreports.LogStatus;
+import com.framework.testbase.TestBase;
 
 /**
  * @author dashd
  *
  */
-public class VerifySIMPackege extends TestBsae {
+public class VerifySIMPackege extends TestBase {
 	
 	final static Logger log = Logger.getLogger(VerifySIMPackege.class);
 	public static Actions action;

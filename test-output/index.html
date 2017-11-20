@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -114,6 +114,16 @@
                       <a href="#" panel-name="suite-SmokeTestSuite" class="show-methods passed suite-SmokeTestSuite"> (show)</a> <!-- show-methods passed suite-SmokeTestSuite -->
                     </span>
                     <div class="method-list-content passed suite-SmokeTestSuite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SmokeTestSuite" title="com.framework.pageObject.Logout" hash-for-method="logOut">logOut</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SmokeTestSuite" title="com.framework.pageObject.Login" hash-for-method="login">login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-SmokeTestSuite" title="com.test.regression.VerifySIMPackege" hash-for-method="simPackageHome">simPackageHome</a> <!-- method navigator-link -->
@@ -149,13 +159,30 @@
                   <span class="method-name">createPackage</span>
                   <span class="parameters">(Testpackage)</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at com.test.regression.VerifySIMPackege.createPackage(VerifySIMPackege.java:54)
+	at com.test.regression.VerifySIMPackege.createPackage(VerifySIMPackege.java:51)
 ... Removed 29 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-SmokeTestSuite-class-failed -->
+          <div class="suite-SmokeTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.framework.pageObject.Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
+                  <em>
+(Log in to portal)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SmokeTestSuite-class-passed -->
           <div class="suite-SmokeTestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -167,6 +194,23 @@
                   <a name="verifyTechProfCreation">
                   </a> <!-- verifyTechProfCreation -->
                   <span class="method-name">verifyTechProfCreation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SmokeTestSuite-class-passed -->
+          <div class="suite-SmokeTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.framework.pageObject.Logout</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="logOut">
+                  </a> <!-- logOut -->
+                  <span class="method-name">logOut</span>
+                  <em>
+(Logging out from Portal)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -200,8 +244,10 @@
     &lt;parameter name=&quot;package&quot; value=&quot;Testpackage&quot;/&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;com.framework.pageObject.Login&quot;/&gt;
       &lt;class name=&quot;com.test.regression.VerifySIMPackege&quot;/&gt;
       &lt;class name=&quot;com.test.regression.VerifyTPCreation&quot;/&gt;
+      &lt;class name=&quot;com.framework.pageObject.Logout&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- CreatePackage --&gt;
 &lt;/suite&gt; &lt;!-- SmokeTestSuite --&gt;
@@ -215,7 +261,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">CreatePackage (2 classes)</span>
+                <span class="test-name">CreatePackage (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -241,24 +287,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'createPackage')
-data.setCell(0, 2, 'com.test.regression.VerifySIMPackege')
-data.setCell(0, 3, 2288);
+data.setCell(0, 1, 'login')
+data.setCell(0, 2, 'com.framework.pageObject.Login')
+data.setCell(0, 3, 8839);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'simPackageHome')
+data.setCell(1, 1, 'createPackage')
 data.setCell(1, 2, 'com.test.regression.VerifySIMPackege')
-data.setCell(1, 3, 1669);
+data.setCell(1, 3, 1092);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyTechProfCreation')
-data.setCell(2, 2, 'com.test.regression.VerifyTPCreation')
-data.setCell(2, 3, 50);
+data.setCell(2, 1, 'simPackageHome')
+data.setCell(2, 2, 'com.test.regression.VerifySIMPackege')
+data.setCell(2, 3, 981);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'logOut')
+data.setCell(3, 2, 'com.framework.pageObject.Logout')
+data.setCell(3, 3, 359);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyTechProfCreation')
+data.setCell(4, 2, 'com.test.regression.VerifyTPCreation')
+data.setCell(4, 3, 16);
 window.suiteTableData['SmokeTestSuite']= { tableData: data, tableDiv: 'times-div-SmokeTestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 11 seconds</span>
               <div id="times-div-SmokeTestSuite">
               </div> <!-- times-div-SmokeTestSuite -->
             </div> <!-- times-div -->
@@ -273,11 +327,41 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-SmokeTestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">5 ignored methods</span>
+            <span class="header-content">15 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.test.regression.VerifyTPCreation</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">loadPropertiesFile</span>
+                <br/>
+                <span class="ignored-method-name">closeApplication</span>
+                <br/>
+                <span class="ignored-method-name">setUpApplication</span>
+                <br/>
+                <span class="ignored-method-name">extentReports</span>
+                <br/>
+                <span class="ignored-method-name">endExtendedReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.framework.pageObject.Logout</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">loadPropertiesFile</span>
+                <br/>
+                <span class="ignored-method-name">closeApplication</span>
+                <br/>
+                <span class="ignored-method-name">setUpApplication</span>
+                <br/>
+                <span class="ignored-method-name">extentReports</span>
+                <br/>
+                <span class="ignored-method-name">endExtendedReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.test.regression.VerifySIMPackege</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">loadPropertiesFile</span>
                 <br/>
@@ -299,74 +383,80 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.test.regression.VerifySIMPackege</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.framework.pageObject.Login</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">extentReports</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
                 <span class="method-name">loadPropertiesFile</span>
-                <span class="method-start">221 ms</span>
+                <span class="method-start">255 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
                 <span class="method-name">setUpApplication(Chrome)</span>
-                <span class="method-start">221 ms</span>
+                <span class="method-start">255 ms</span>
               </div> <!-- configuration-test before -->
-              <div class="configuration-class before">
+              <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">8203 ms</span>
-              </div> <!-- configuration-class before -->
+                <span class="method-start">11865 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResults([TestResult name=login status=SUCCESS method=Login.login()[pri:0, instance:com.framework.pageObject....)</span>
+                <span class="method-start">20706 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.regression.VerifySIMPackege</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">simPackageHome</span>
-                <span class="method-start">14992 ms</span>
+                <span class="method-start">21429 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResults([TestResult name=simPackageHome status=SUCCESS method=VerifySIMPackege.simPackageHome()[pri:0, insta...)</span>
-                <span class="method-start">16665 ms</span>
+                <span class="method-start">22413 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">createPackage(Testpackage)</span>
-                <span class="method-start">19951 ms</span>
+                <span class="method-start">22735 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResults([TestResult name=createPackage status=FAILURE method=VerifySIMPackege.createPackage(java.lang.String...)</span>
-                <span class="method-start">22244 ms</span>
+                <span class="method-start">23901 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">logOut</span>
-                <span class="method-start">23788 ms</span>
-              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.regression.VerifyTPCreation</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">login</span>
-                <span class="method-start">24707 ms</span>
-              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verifyTechProfCreation</span>
-                <span class="method-start">26365 ms</span>
+                <span class="method-start">35563 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResults([TestResult name=verifyTechProfCreation status=SUCCESS method=VerifyTPCreation.verifyTechProfCreatio...)</span>
-                <span class="method-start">26415 ms</span>
+                <span class="method-start">35579 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">logOut</span>
-                <span class="method-start">26579 ms</span>
-              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.test.regression.VerifySIMPackege</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.framework.pageObject.Logout</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">logOut</span>
+                <span class="method-start">35788 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResults([TestResult name=logOut status=SUCCESS method=Logout.logOut()[pri:0, instance:com.framework.pageObje...)</span>
+                <span class="method-start">36148 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.framework.pageObject.Login</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeApplication</span>
-                <span class="method-start">27852 ms</span>
+                <span class="method-start">36185 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-test after">
                 <span class="method-name">endExtendedReport</span>
-                <span class="method-start">30453 ms</span>
+                <span class="method-start">39730 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
