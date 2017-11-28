@@ -5,12 +5,9 @@ import static com.framework.testbase.TestBase.*;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
-
 import static com.framework.execution.Keywords.*;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 
 public class simOrderPage {
@@ -21,6 +18,7 @@ public class simOrderPage {
 		String xPurchaseOrder=rdProf.getProperty("PurchaseOrder");
 		String xQuantity=rdProf.getProperty("Quantity");
 		String xSAPNumber=rdProf.getProperty("SAPNumber");
+		
 		String xIMSIPool=rdProf.getProperty("IMSIPool");
 		String xNFCkey=rdProf.getProperty("NFCkey");
 		String xOTACapable=rdProf.getProperty("OTACapable");
@@ -36,8 +34,7 @@ public class simOrderPage {
 		String xSelectDeliveryDate=rdProf.getProperty("SelectDeliveryDate");
 		String xSelectDate=rdProf.getProperty("SelectDate");
 		String xorderSubmitButton=rdProf.getProperty("orderSubmitButton");
-		
-		
+				
 	
 		public void MainMenu() throws IOException {
 		goToMainMenu();
@@ -64,11 +61,9 @@ public class simOrderPage {
 			}
 		
 		public void selectSAPNumber() throws IOException, InterruptedException{
-			keyword("click","//div[@id='commercialSelectId_chzn']", null);
 			keyword("click",xSAPNumber, null);
+			keyword("click","//div[@id='commercialSelectId_chzn']//div[1]//li[3]", null);
 			
-			
-			//System.out.println(driver.findElement(By.xpath("xSAPNumber")).getText());
 			log.info("SAP Number Selected");
 			}
 
@@ -165,8 +160,8 @@ public class simOrderPage {
 				selectArtwork();
 				selectSIMtype();
 				selectSIMtypeIdentifier();*/
-				enterMVNO();
-				enterMnemonics();
+				//enterMVNO();
+				//enterMnemonics();
 				selectDeliveryDate("30");
 				clickCreateOrder();
 				

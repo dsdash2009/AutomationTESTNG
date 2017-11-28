@@ -1,6 +1,6 @@
 package com.framework.execution;
 
-import static com.framework.testbase.TestBsae.*;
+import static com.framework.testbase.TestBase.*;
 import static com.framework.reports.TimeTaken.*;
 import static com.framework.locators.XpathLocator.*;
 import static com.framework.reports.Screenshot.*;

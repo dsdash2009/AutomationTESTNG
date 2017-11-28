@@ -37,19 +37,6 @@ public class LoginPage {
 		keyword("click",xloginbutton, null);
 	}
 	
-	public void logOut() throws IOException{
-		
-			driver.manage().timeouts().pageLoadTimeout(10,TimeUnit.SECONDS);
-			keyword("click",xlogoutButton, null);
-				
-			log.info("User Logged out from DSP successfully");
-		}
-		
-	public boolean verifySuccessLogin(){
-		WebElement verifyDashboardlink=driver.findElement(By.xpath(xdashBoardLink));
-		return new GenericHelper().isDisplayed(verifyDashboardlink);
-	}
-	
 	public void loginToApp(String uName, String psWord){
 		
 		try {
@@ -62,6 +49,21 @@ public class LoginPage {
 		}
 		
 	}
+	
+	public boolean verifySuccessLogin(){
+		WebElement verifyDashboardlink=driver.findElement(By.xpath(xdashBoardLink));
+		return new GenericHelper().isDisplayed(verifyDashboardlink);
+	}
+	
+	
+	public void logOut() throws IOException{
+		
+		driver.manage().timeouts().pageLoadTimeout(10,TimeUnit.SECONDS);
+		keyword("click",xlogoutButton, null);
+			
+		log.info("User Logged out from DSP successfully");
+	}
+	
 	}
 	
 

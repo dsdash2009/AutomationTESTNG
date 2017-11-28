@@ -1,6 +1,6 @@
 package com.framework.locators;
 
-import static com.framework.testbase.TestBsae.*;
+import static com.framework.testbase.TestBase.*;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -24,6 +24,5 @@ public class XpathLocator {
 		}
 		return null;
 	}
-	
 	
 }

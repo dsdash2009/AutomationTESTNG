@@ -120,8 +120,8 @@ public class TestBase {
 	@AfterTest
 	public void closeApplication(){
 		try{
-			driver.close();
-			driver.quit();
+//			driver.close();
+//			driver.quit();
 						
 			log.info("Application Closed successfully");
 	}
